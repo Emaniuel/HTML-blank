@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/css/fontello.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Blank</title>
+    </head>
+    <body onload="bright()">
+            <div class="nav">
+                <div class="switch">
+                    <div class="switches" id="switch1" onclick="dark()">
+                        <i class="icon-light-down"></i>
+                    </div>
+                    <div class="switches" id="switch2" onclick="bright()">
+                        <i class="icon-light-up"></i>
+                    </div>
+                </div>
+                <div id="spacer"></div>
+                <div class="design">
+                    <div class="text-box">Designed and<br> Coded by DM&copy;</div>
+                    <div class="github">
+                        <a href="https://github.com/Emaniuel" target="_blank">
+                            <i class="icon-github-squared" style="font-size: 40px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+            </div>
+    </body>
+    <script>
+
+        let container = document.querySelector(".cont");
+        let switch1 = document.querySelector("#switch1");
+        let switch2 = document.querySelector("#switch2");
+        let design = document.querySelector(".design");
+
+        function bright(){
+            container.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+            switch1.style.backgroundColor = "rgba(0, 0, 0, 0)";
+            switch2.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+            switch1.style.color = "rgba(0, 0, 0, 0.2)";
+            switch1.style.borderColor = "rgba(255, 255, 255, 0.2)";
+            switch2.style.borderColor = "rgba(0, 0, 0, 0)";
+            switch2.style.color = "rgba(0, 0, 0, 0.2)";
+            design.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+        };
+
+        function dark(){
+            container.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
+            switch1.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
+            switch1.style.borderColor = "rgba(0, 0, 0, 0)";
+            switch2.style.backgroundColor = "rgba(0, 0, 0, 0)";
+            switch2.style.borderColor = "rgba(0, 0, 0, 0.2)";
+            switch1.style.color = "rgba(255, 255, 255, 0.2)";
+            switch2.style.color = "rgba(255, 255, 255, 0.2)";
+            design.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
+        };
+
+    </script>
+</html>
